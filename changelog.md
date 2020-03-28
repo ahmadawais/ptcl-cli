@@ -29,15 +29,15 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
-### RELEASE: [1.1.0](https://github.com/ahmadawais/ptcli/compare/1.0.0...1.1.0)
+### RELEASE: [1.1.0](https://github.com/ahmadawais/ptcl-cli/compare/1.0.0...1.1.0)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
-> 📦 Name [`6bec11f`](https://github.com/ahmadawais/ptcli/commit/6bec11fc58d9605dbf80c7dc16dccc403bbb5201) <br>
+> 📦 Name [`6bec11f`](https://github.com/ahmadawais/ptcl-cli/commit/6bec11fc58d9605dbf80c7dc16dccc403bbb5201) <br>
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
-> 👌 Name [`d8455c6`](https://github.com/ahmadawais/ptcli/commit/d8455c691b225a8c9ea410a79ba4c711baab9290) <br>
+> 👌 Name [`d8455c6`](https://github.com/ahmadawais/ptcl-cli/commit/d8455c691b225a8c9ea410a79ba4c711baab9290) <br>
 
 <br>
 
@@ -49,24 +49,24 @@ I have released a video course to help you become a better developer — <a href
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
-> 📦 First commit [`980f58c`](https://github.com/ahmadawais/ptcli/commit/980f58c537546db7e1d79f0c652d1567341be9e0) <br>
-> 📦 Reboot [`70a59a8`](https://github.com/ahmadawais/ptcli/commit/70a59a82c19f1630721c54d8870ee761524a0d22) <br>
-> 📦 History [`b875b88`](https://github.com/ahmadawais/ptcli/commit/b875b88a8f09f80467d491ca31959d0ae2e47c2a) <br>
+> 📦 First commit [`980f58c`](https://github.com/ahmadawais/ptcl-cli/commit/980f58c537546db7e1d79f0c652d1567341be9e0) <br>
+> 📦 Reboot [`70a59a8`](https://github.com/ahmadawais/ptcl-cli/commit/70a59a82c19f1630721c54d8870ee761524a0d22) <br>
+> 📦 History [`b875b88`](https://github.com/ahmadawais/ptcl-cli/commit/b875b88a8f09f80467d491ca31959d0ae2e47c2a) <br>
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
-> 👌 Docs [`cc7048e`](https://github.com/ahmadawais/ptcli/commit/cc7048e6bca031b8025045e6d4eff22fbf313bf0) <br>
-> 👌 Removing this from history [`3576ded`](https://github.com/ahmadawais/ptcli/commit/3576ded829a6ceba69354bb6fc44e8456fc02445) <br>
-> 👌 Removing  from history [`70af248`](https://github.com/ahmadawais/ptcli/commit/70af2486f1d537c81947c6a95ebd03c61cf38198) <br>
-> 👌 No Data [`52a42d6`](https://github.com/ahmadawais/ptcli/commit/52a42d65ba3ca50d6faa919c03e17c61d5b9f7d9) <br>
+> 👌 Docs [`cc7048e`](https://github.com/ahmadawais/ptcl-cli/commit/cc7048e6bca031b8025045e6d4eff22fbf313bf0) <br>
+> 👌 Removing this from history [`3576ded`](https://github.com/ahmadawais/ptcl-cli/commit/3576ded829a6ceba69354bb6fc44e8456fc02445) <br>
+> 👌 Removing  from history [`70af248`](https://github.com/ahmadawais/ptcl-cli/commit/70af2486f1d537c81947c6a95ebd03c61cf38198) <br>
+> 👌 No Data [`52a42d6`](https://github.com/ahmadawais/ptcl-cli/commit/52a42d65ba3ca50d6faa919c03e17c61d5b9f7d9) <br>
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
-> 🐛 Ignore [`edc88ed`](https://github.com/ahmadawais/ptcli/commit/edc88ed41893852d4c971909beb5ac810d0267d1) <br>
+> 🐛 Ignore [`edc88ed`](https://github.com/ahmadawais/ptcl-cli/commit/edc88ed41893852d4c971909beb5ac810d0267d1) <br>
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
-> 📖 Changelog [`19cf7d5`](https://github.com/ahmadawais/ptcli/commit/19cf7d59f314ea33bcbd30af4cd38d9b0710b76a) <br>
+> 📖 Changelog [`19cf7d5`](https://github.com/ahmadawais/ptcl-cli/commit/19cf7d59f314ea33bcbd30af4cd38d9b0710b76a) <br>
 
 <br>
 

@@ -3,7 +3,7 @@
 	"version": "1.1.0",
 	"description": "Control PTCL router via command line.",
 	"license": "MIT",
-	"repository": "ahmadawais/ptcli",
+	"repository": "ahmadawais/ptcl-cli",
 	"author": {
 		"name": "Ahmad Awais",
 		"email": "me@AhmadAwais.com",
@@ -14,14 +14,14 @@
 		"node": ">=12.x"
 	},
 	"bin": {
-		"ptcli": "index.js"
+		"ptcl-cli": "index.js"
 	},
 	"files": [
 		"index.js",
 		"utils/*"
 	],
 	"keywords": [
-		"ptcli",
+		"ptcl-cli",
 		"Ahmad Awais",
 		"ahmadawais"
 	],

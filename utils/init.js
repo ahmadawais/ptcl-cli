@@ -7,7 +7,7 @@ const unhandledError = require('cli-handle-unhandled');
 module.exports = async () => {
 	unhandledError();
 	checkNode(`12`);
-	welcome(`ptcli`, `by Awais.dev\n${pkgJSON.description}`, {
+	welcome(`ptcl-cli`, `by Awais.dev\n${pkgJSON.description}`, {
 		bgColor: `#A6CF39`,
 		color: `#000`,
 		bold: true,
