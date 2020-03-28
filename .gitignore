@@ -71,3 +71,4 @@ assets/img/.DS_Store
 package-lock.json
 yarn.lock
 data
+data/
