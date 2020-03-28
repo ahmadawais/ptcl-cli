@@ -8,8 +8,8 @@ module.exports = async () => {
 	unhandledError();
 	checkNode(`12`);
 	welcome(`ptcli`, `by Awais.dev\n${pkgJSON.description}`, {
-		bgColor: `#007C91`,
-		color: `#FFFFFF`,
+		bgColor: `#A6CF39`,
+		color: `#000`,
 		bold: true,
 		clear: true,
 		version: `v${pkgJSON.version}`
@@ -18,5 +18,5 @@ module.exports = async () => {
 		pkg: pkgJSON,
 		shouldNotifyInNpmScript: true,
 		updateCheckInterval: 1000 * 60 * 60 * 24 * 7 // 1 week.
-	}).notify({ isGlobal: true });
+	}).notify({isGlobal: true});
 };

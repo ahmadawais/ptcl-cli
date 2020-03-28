@@ -11,27 +11,41 @@ module.exports = meow(
 	  ${green(`ptcli`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
 
 	Commands
-	  ${cyan(`command`)}         Description
+	  ${cyan(`config`)}                             Configure the CLI.
 
 	Options
-	  ${yellow(`--option`)}, ${yellow(`-o`)}         Description
+	  ${yellow(`--login`)}, ${yellow(`-l`)}         Login and save credentials.
+	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
+	  ${yellow(`--xheadless`)}, ${yellow(`-x`)}     Not the headless mode.
 
 	Examples
-	  ${green(`ptcli`)} ${cyan(`command`)}
-	  ${green(`ptcli`)} ${yellow(`--sort`)}
-
-	❯ You can also run command + option at once:
-	  ${green(`ptcli`)} ${cyan(`command`)} ${yellow(`-x`)}
+	  ${green(`ptcli`)} ${cyan(`config`)}
+	  ${green(`ptcli`)} ${yellow(`--login`)}
+	  ${green(`ptcli`)} ${yellow(`--l`)}
+	  ${green(`ptcli`)} ${yellow(`--reboot`)}
+	  ${green(`ptcli`)} ${yellow(`--r`)}
+	  ${green(`ptcli`)} ${yellow(`--xheadless`)}
+	  ${green(`ptcli`)} ${yellow(`--x`)}
 `,
 	{
 		booleanDefault: undefined,
 		hardRejection: false,
 		inferType: false,
 		flags: {
-			option: {
+			login: {
 				type: 'boolean',
 				default: false,
-				alias: 'o'
+				alias: 'l'
+			},
+			reboot: {
+				type: 'boolean',
+				default: false,
+				alias: 'r'
+			},
+			xheadless: {
+				type: 'boolean',
+				default: false,
+				alias: 'x'
 			}
 		}
 	}
