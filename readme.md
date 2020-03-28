@@ -1,6 +1,6 @@
-# ptcli
+# ptcl-cli
 
-[![DOWNLOADS](https://img.shields.io/npm/dt/ptcli?label=DOWNLOADS%20%20❯&colorA=6A788D&colorB=6A788D&style=flat)](https://www.npmjs.com/package/ptcli) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=6A788D&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
+[![DOWNLOADS](https://img.shields.io/npm/dt/ptcl-cli?label=DOWNLOADS%20%20❯&colorA=6A788D&colorB=6A788D&style=flat)](https://www.npmjs.com/package/ptcl-cli) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=6A788D&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=6A788D&colorB=6A788D&style=flat)](https://twitter.com/mrahmadawais/)
 
 > Control PTCL router via command line.
@@ -12,7 +12,7 @@
 ## Install
 
 ```sh
-npm install -g ptcli
+npm install -g ptcl-cli
 ```
 
 <br>
@@ -22,12 +22,12 @@ npm install -g ptcli
 ## Usage
 
 ```sh
-ptcli
-ptcli config # Configure and store user/pass in a safe location.
-ptcli --reboot # Reboots the router.
-ptcli --reboot --xheadless # Reboots the router with headless browser.
-ptcli -r -x # Reboots the router with headless browser.
-ptcli -rx # Reboots the router with headless browser.
+ptcl-cli
+ptcl-cli config # Configure and store user/pass in a safe location.
+ptcl-cli --reboot # Reboots the router.
+ptcl-cli --reboot --xheadless # Reboots the router with headless browser.
+ptcl-cli -r -x # Reboots the router with headless browser.
+ptcl-cli -rx # Reboots the router with headless browser.
 ```
 
 <br>
