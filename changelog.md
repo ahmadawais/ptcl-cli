@@ -29,6 +29,22 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [1.1.0](https://github.com/ahmadawais/ptcli/compare/1.0.0...1.1.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Name [`6bec11f`](https://github.com/ahmadawais/ptcli/commit/6bec11fc58d9605dbf80c7dc16dccc403bbb5201) <br>
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Name [`d8455c6`](https://github.com/ahmadawais/ptcli/commit/d8455c691b225a8c9ea410a79ba4c711baab9290) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: 1.0.0
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
@@ -47,6 +63,10 @@ I have released a video course to help you become a better developer — <a href
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Ignore [`edc88ed`](https://github.com/ahmadawais/ptcli/commit/edc88ed41893852d4c971909beb5ac810d0267d1) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`19cf7d5`](https://github.com/ahmadawais/ptcli/commit/19cf7d59f314ea33bcbd30af4cd38d9b0710b76a) <br>
 
 <br>
 
