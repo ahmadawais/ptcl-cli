@@ -1,6 +1,6 @@
 {
 	"name": "ptcli",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Control PTCL router via command line.",
 	"license": "MIT",
 	"repository": "ahmadawais/ptcli",
