@@ -12,7 +12,7 @@
 ## Install
 
 ```sh
-npm install ptcli
+npm install -g ptcli
 ```
 
 <br>
@@ -21,8 +21,13 @@ npm install ptcli
 
 ## Usage
 
-```js
-const ptcli = require('ptcli');
+```sh
+ptcli
+ptcli config # Configure and store user/pass in a safe location.
+ptcli --reboot # Reboots the router.
+ptcli --reboot --xheadless # Reboots the router with headless browser.
+ptcli -r -x # Reboots the router with headless browser.
+ptcli -rx # Reboots the router with headless browser.
 ```
 
 <br>
