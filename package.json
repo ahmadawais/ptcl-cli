@@ -1,5 +1,5 @@
 {
-	"name": "ptcli",
+	"name": "ptcl-cli",
 	"version": "1.0.0",
 	"description": "Control PTCL router via command line.",
 	"license": "MIT",
