@@ -16,15 +16,18 @@ module.exports = meow(
 	Options
 	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
 	  ${yellow(`--xheadless`)}, ${yellow(`-x`)}     Not the headless mode.
+	  ${yellow(`--screenshot`)}, ${yellow(`-s`)}    Screenshot for internet issues.
 
 	Examples
 	  ${green(`ptcl-cli`)} ${cyan(`config`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--login`)}
-	  ${green(`ptcl-cli`)} ${yellow(`--l`)}
+	  ${green(`ptcl-cli`)} ${yellow(`-l`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--reboot`)}
-	  ${green(`ptcl-cli`)} ${yellow(`--r`)}
+	  ${green(`ptcl-cli`)} ${yellow(`-r`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--xheadless`)}
-	  ${green(`ptcl-cli`)} ${yellow(`--x`)}
+	  ${green(`ptcl-cli`)} ${yellow(`-x`)}
+	  ${green(`ptcl-cli`)} ${yellow(`--screenshot`)}
+	  ${green(`ptcl-cli`)} ${yellow(`-s`)}
 `,
 	{
 		booleanDefault: undefined,

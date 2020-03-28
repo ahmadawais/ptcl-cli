@@ -99,7 +99,6 @@ const {prompt} = require('enquirer');
 		await page.click('input[id="confirmOK"]');
 		spinner.succeed(`${green('REBOOTING')} now…`);
 	}
-	// await browser.close();
 	theEnd();
 	await browser.close();
 })();
