@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
+const path = require('path');
+const os = require('os');
 const ora = require('ora');
 const chalk = require('chalk');
 const yellow = chalk.yellow;
-const green = chalk.green;
-const cyan = chalk.cyan;
+const green = chalk.hex('#A6CF39');
 const spinner = ora({text: ''});
 const Table = require('cli-table3');
 const {prompt} = require('enquirer');
@@ -17,8 +18,6 @@ const handleError = require('cli-handle-error');
 const shouldCancel = require('cli-should-cancel');
 const Configstore = require('configstore');
 const pkgJSON = require('./package.json');
-const os = require('os');
-const path = require('path');
 
 (async () => {
 	// CLI.
@@ -166,19 +165,23 @@ const path = require('path');
 		);
 		spinner.succeed(`${green(`DATA`)} listed below:\n`);
 		const table = new Table({
-			head: [`#`, `${cyan(`DOWNLOAD`)}`, `${cyan(`UPLOAD`)}`],
-			style: {head: ['cyan']}
+			head: [
+				`${green(`#`)}`,
+				`${green(`DOWNLOAD`)}`,
+				`${green(`UPLOAD`)}`
+			],
+			style: {head: ['green']}
 		});
 
-		table.push([`SNR`, downSNR, upSNR]);
+		table.push([`${green(`SNR`)}`, downSNR, upSNR]);
 		table.push([
-			`Speed`,
+			`${green(`Speed`)}`,
 			`${Math.abs(down) / 1000} Mbps`,
 			`${Math.abs(up) / 1000} Mbps`
 		]);
 
 		table.push([
-			`Attainable`,
+			`${green(`Attainable`)}`,
 			`${Math.abs(attainableDown) / 1000} Mbps`,
 			`${Math.abs(attainableUp) / 1000} Mbps`
 		]);

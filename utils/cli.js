@@ -1,17 +1,15 @@
 const meow = require('meow');
 const chalk = require('chalk');
-const green = chalk.green;
+const green = chalk.hex('#A6CF39');
 const yellow = chalk.yellow;
-const cyan = chalk.cyan;
-const dim = chalk.dim;
 
 module.exports = meow(
 	`
 	Usage
-	  ${green(`ptcl-cli`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
+	  ${green(`ptcl-cli`)} ${green(`<command>`)} ${yellow(`[--option]`)}
 
 	Commands
-	  ${cyan(`config`)}              Configure the CLI.
+	  ${green(`config`)}              Configure the CLI.
 
 	Options
 	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
@@ -20,7 +18,7 @@ module.exports = meow(
 	  ${yellow(`--screenshot`)}, ${yellow(`-s`)}    Screenshot xDSL Stats to desktop.
 
 	Examples
-	  ${green(`ptcl-cli`)} ${cyan(`config`)}
+	  ${green(`ptcl-cli`)} ${green(`config`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--login`)}
 	  ${green(`ptcl-cli`)} ${yellow(`-l`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--reboot`)}
