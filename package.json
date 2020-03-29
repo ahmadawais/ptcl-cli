@@ -47,6 +47,7 @@
 		"enquirer": "^2.3.4",
 		"meow": "^6.1.0",
 		"ora": "^4.0.3",
-		"puppeteer": "^2.1.1"
+		"puppeteer": "^2.1.1",
+		"update-notifier": "^4.1.0"
 	}
 }
