@@ -4,7 +4,10 @@ const ora = require('ora');
 const chalk = require('chalk');
 const yellow = chalk.yellow;
 const green = chalk.green;
+const cyan = chalk.cyan;
 const spinner = ora({text: ''});
+const Table = require('cli-table3');
+const {prompt} = require('enquirer');
 const cli = require('./utils/cli.js');
 const puppeteer = require('puppeteer');
 const init = require('./utils/init.js');
@@ -14,13 +17,17 @@ const handleError = require('cli-handle-error');
 const shouldCancel = require('cli-should-cancel');
 const Configstore = require('configstore');
 const pkgJSON = require('./package.json');
-const {prompt} = require('enquirer');
+const os = require('os');
+const path = require('path');
 
 (async () => {
 	// CLI.
 	const [input] = cli.input;
 	const reboot = cli.flags.reboot;
 	const xheadless = cli.flags.xheadless;
+	const screenshot = cli.flags.screenshot;
+	const data = cli.flags.data;
+
 	init();
 	input === 'help' && (await cli.showHelp(0));
 	const configure = input === 'config';
@@ -60,13 +67,16 @@ const {prompt} = require('enquirer');
 		pass = config.get('pass');
 	}
 
-	spinner.start(`${yellow('BROWSER')} starting…`);
+	spinner.start(`${yellow(`BROWSER`)} starting…`);
 	const browser = await puppeteer.launch({
 		headless: xheadless,
 		userDataDir: 'data'
 	});
+	spinner.succeed(`${green(`BROWSER`)} started`);
+
+	spinner.start(`${yellow(`PAGE`)} opening…`);
 	const page = (await browser.pages())[0];
-	spinner.succeed(`${green('BROWSER')} started`);
+	page.setViewport({width: 1000, height: 1000, deviceScaleFactor: 2});
 
 	await page.goto('http://192.168.10.1/', {
 		timeout: 15000,
@@ -78,26 +88,101 @@ const {prompt} = require('enquirer');
 			timeout: 3000
 		})
 	);
+	spinner.succeed(`${green(`PAGE`)} open`);
 
 	if (!isLoggedIn) {
-		spinner.start(`${yellow('LOGIN')} attempt…`);
+		spinner.start(`${yellow(`LOGIN`)} attempt…`);
 		await page.type('#Frm_Username', user);
 		await page.type('#Frm_Password', pass);
 		await page.click('#LoginId');
-		spinner.succeed(`${green('LOGIN')} successful`);
+		spinner.succeed(`${green(`LOGIN`)} successful`);
 	}
 
 	if (reboot) {
-		spinner.start(`${yellow('REBOOT')} starting…`);
-		await waitFor(1000);
+		spinner.start(`${yellow(`REBOOT`)} starting…`);
+		await waitFor(800);
 		await page.click('a[title="Management"]');
-		await waitFor(1000);
+		await waitFor(800);
 		await page.click('a[title="Reboot"]');
-		await waitFor(1000);
+		await waitFor(800);
 		await page.click('input[id="Btn_restart"]');
-		await waitFor(1000);
+		await waitFor(800);
 		await page.click('input[id="confirmOK"]');
-		spinner.succeed(`${green('REBOOTING')} now…`);
+		spinner.succeed(`${green(`REBOOTING`)} now…`);
+	}
+
+	if (screenshot) {
+		spinner.start(`${yellow(`SCREENSHOTS`)} starting…`);
+		const screenshotPathName = path.join(
+			os.homedir(),
+			'Desktop',
+			`stats-xdsl-${new Date().toISOString().substring(0, 10)}.jpg`
+		);
+		await waitFor(800);
+		await page.click('a[title="Device Info"]');
+		await waitFor(800);
+		await page.click('a[title="Statistics"]');
+		await waitFor(800);
+		await page.click('a[title="xDSL"]');
+		await waitFor(800);
+		await waitFor(800);
+		await page.screenshot({path: screenshotPathName, type: 'jpeg'});
+		spinner.succeed(`${green(`SCREENSHOTS`)} saved…`);
+	}
+
+	if (data || screenshot) {
+		spinner.start(`${yellow(`DATA`)} fetching…`);
+
+		await waitFor(800);
+		await page.click('a[title="Device Info"]');
+		await waitFor(800);
+		await page.click('a[title="Statistics"]');
+		await waitFor(800);
+		await page.click('a[title="xDSL"]');
+		await waitFor(800);
+		const downSNR = await page.$eval(
+			'td[id="Downstream_noise_margin"]',
+			el => el.textContent
+		);
+		const upSNR = await page.$eval(
+			'td[id="Upstream_noise_margin"]',
+			el => el.textContent
+		);
+		const attainableDown = await page.$eval(
+			'td[id="Downstream_max_rate"]',
+			el => el.textContent
+		);
+		const attainableUp = await page.$eval(
+			'td[id="Upstream_max_rate"]',
+			el => el.textContent
+		);
+		const down = await page.$eval(
+			'td[id="Downstream_current_rate"]',
+			el => el.textContent
+		);
+		const up = await page.$eval(
+			'td[id="Upstream_current_rate"]',
+			el => el.textContent
+		);
+		spinner.succeed(`${green(`DATA`)} listed below:\n`);
+		const table = new Table({
+			head: [`#`, `${cyan(`DOWNLOAD`)}`, `${cyan(`UPLOAD`)}`],
+			style: {head: ['cyan']}
+		});
+
+		table.push([`SNR`, downSNR, upSNR]);
+		table.push([
+			`Speed`,
+			`${Math.abs(down) / 1000} Mbps`,
+			`${Math.abs(up) / 1000} Mbps`
+		]);
+
+		table.push([
+			`Attainable`,
+			`${Math.abs(attainableDown) / 1000} Mbps`,
+			`${Math.abs(attainableUp) / 1000} Mbps`
+		]);
+		console.log(table.toString());
 	}
 	theEnd();
 	await browser.close();
