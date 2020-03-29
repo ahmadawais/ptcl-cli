@@ -29,10 +29,23 @@ I have released a video course to help you become a better developer — <a href
 
 <br>
 
+### RELEASE: [2.2.0](https://github.com/ahmadawais/ptcli/compare/2.1.1...2.2.0)
+
+![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
+
+> 📦 Green [`7ac3308`](https://github.com/ahmadawais/ptcli/commit/7ac3308c2b9b0ce8bac5033ea23a5ca5d6298990) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [2.1.1](https://github.com/ahmadawais/ptcli/compare/2.1.0...2.1.1)
 
 ![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
 
+> 📖 Changelog [`1e43c07`](https://github.com/ahmadawais/ptcli/commit/1e43c07ab9f4e76644f65523d4eb94f37eeb5a4b) <br>
 > 📖 List [`29bbd12`](https://github.com/ahmadawais/ptcli/commit/29bbd12e4786f44a669133d483fd7caac63c8653) <br>
 
 <br>
