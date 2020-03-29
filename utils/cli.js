@@ -15,7 +15,9 @@ module.exports = meow(
 	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
 	  ${yellow(`--xheadless`)}, ${yellow(`-x`)}     Not the headless mode.
 	  ${yellow(`--data`)}, ${yellow(`-d`)}          Print the stats data.
-	  ${yellow(`--screenshot`)}, ${yellow(`-s`)}    Screenshot xDSL Stats to desktop.
+	  ${yellow(`--screenshot`)}, ${yellow(
+		`-s`
+	)}    Screenshot xDSL Stats to desktop.
 
 	Examples
 	  ${green(`ptcl-cli`)} ${green(`config`)}

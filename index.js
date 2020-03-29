@@ -5,6 +5,7 @@ const os = require('os');
 const ora = require('ora');
 const chalk = require('chalk');
 const yellow = chalk.yellow;
+const red = chalk.red;
 const green = chalk.hex('#A6CF39');
 const spinner = ora({text: ''});
 const Table = require('cli-table3');
@@ -30,6 +31,15 @@ const pkgJSON = require('./package.json');
 	init();
 	input === 'help' && (await cli.showHelp(0));
 	const configure = input === 'config';
+
+	// Should I run?
+	if (!configure && !reboot && !xheadless && !screenshot & !data) {
+		spinner.fail(`${red(`Nops`)} You didn't define any options to run.`);
+		spinner.info(`${green(`HELP`)} section below:`);
+		await cli.showHelp(0);
+		console.log();
+		process.exit(0);
+	}
 
 	// Config.
 	const config = new Configstore(pkgJSON.name, {});
