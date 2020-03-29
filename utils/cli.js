@@ -11,13 +11,13 @@ module.exports = meow(
 	  ${green(`ptcl-cli`)} ${cyan(`<command>`)} ${yellow(`[--option]`)}
 
 	Commands
-	  ${cyan(`config`)}                             Configure the CLI.
+	  ${cyan(`config`)}              Configure the CLI.
 
 	Options
 	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
 	  ${yellow(`--xheadless`)}, ${yellow(`-x`)}     Not the headless mode.
-	  ${yellow(`--screenshot`)}, ${yellow(`-s`)}    Screenshot for internet issues.
 	  ${yellow(`--data`)}, ${yellow(`-d`)}          Print the stats data.
+	  ${yellow(`--screenshot`)}, ${yellow(`-s`)}    Screenshot xDSL Stats to desktop.
 
 	Examples
 	  ${green(`ptcl-cli`)} ${cyan(`config`)}

@@ -23,11 +23,16 @@ npm install -g ptcl-cli
 
 ```sh
 ptcl-cli
-ptcl-cli config # Configure and store user/pass in a safe location.
-ptcl-cli --reboot # Reboots the router.
-ptcl-cli --reboot --xheadless # Reboots the router with headless browser.
-ptcl-cli -r -x # Reboots the router with headless browser.
-ptcl-cli -rx # Reboots the router with headless browser.
+ptcl-cli config       # Configure and store user/pass in a safe location.
+ptcl-cli --reboot     # Reboot the router.
+ptcl-cli -r           # Reboot the router.
+ptcl-cli --xheadless  # Headless mode.
+ptcl-cli -x           # Headless mode.
+ptcl-cli --data       # Print the stats data.
+ptcl-cli -d           # Print the stats data.
+ptcl-cli --screenshot # Screenshot xDSL Stats for filing a complaint.
+ptcl-cli -s           # Screenshot xDSL Stats for filing a complaint.
+ptcl-cli -xd          # 1) Headless mode 2) Print the stats data.
 ```
 
 <br>
