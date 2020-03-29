@@ -5,6 +5,14 @@
 
 > Control PTCL router via command line.
 
+- 🗃️ Get all data on **Speed**: `download`, `upload`, **SNR**, **Attainable** speeds.
+- 🤣 Screenshot xDSL stats to the desktop for quick filing a complaint.
+- 🤯 Run in both headless or non-headless browser modes.
+- 📟 Store `user`, `pass` configurations securely.
+- 👐 Automagically `reboot` your PTCL router.
+
+<br>
+
 <br>
 
 [![📟](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/install.png)](./../../)
