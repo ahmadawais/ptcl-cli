@@ -1,9 +1,17 @@
-# ptcl-cli
+<div align="center">
+  <img src=".github/github.jpg" />
 
 [![DOWNLOADS](https://img.shields.io/npm/dt/ptcl-cli?label=DOWNLOADS%20%20❯&colorA=6A788D&colorB=6A788D&style=flat)](https://www.npmjs.com/package/ptcl-cli) [![Learn VSCode](https://img.shields.io/badge/-VSCODE.pro%20%E2%86%92-gray.svg?colorB=6A788D&style=flat)](https://VSCode.pro/?utm_source=GitHubFOSS)
 [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=6A788D&colorB=6A788D&style=flat)](https://twitter.com/mrahmadawais/)
 
 > Control PTCL router via command line.
+
+</div>
+
+
+
+# ptcl-cli
+
 
 - 🗃️ Get all data on **Speed**: `download`, `upload`, **SNR**, **Attainable** speeds.
 - 🤣 Screenshot xDSL stats to the desktop for quick filing a complaint.
