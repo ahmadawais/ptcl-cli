@@ -37,7 +37,7 @@ ptcl-cli
 ptcl-cli config       # Configure and store user/pass in a safe location.
 ptcl-cli --reboot     # Reboot the router.
 ptcl-cli -r           # Reboot the router.
-ptcl-cli --headless  # Headless mode.
+ptcl-cli --headless   # Headless mode.
 ptcl-cli -x           # Headless mode.
 ptcl-cli --data       # Print the stats data.
 ptcl-cli -d           # Print the stats data.
