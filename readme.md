@@ -46,7 +46,7 @@ ptcl-cli -s           # Screenshot xDSL Stats for filing a complaint.
 ptcl-cli -xd          # 1) Headless mode 2) Print the stats data.
 ```
 
-[![⚙️](..github/configdata.gif)](./../../)
+[![⚙️](.github/configdata.gif)](./../../)
 
 <br>
 
