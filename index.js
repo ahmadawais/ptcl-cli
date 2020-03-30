@@ -24,7 +24,7 @@ const pkgJSON = require('./package.json');
 	// CLI.
 	const [input] = cli.input;
 	const reboot = cli.flags.reboot;
-	const xheadless = cli.flags.xheadless;
+	const headless = cli.flags.headless;
 	const screenshot = cli.flags.screenshot;
 	const data = cli.flags.data;
 
@@ -33,7 +33,7 @@ const pkgJSON = require('./package.json');
 	const configure = input === 'config';
 
 	// Should I run?
-	if (!configure && !reboot && !xheadless && !screenshot & !data) {
+	if (!configure && !reboot && !headless && !screenshot & !data) {
 		spinner.fail(`${red(`Nops`)} You didn't define any options to run.`);
 		spinner.info(`${green(`HELP`)} section below:`);
 		await cli.showHelp(0);
@@ -78,7 +78,7 @@ const pkgJSON = require('./package.json');
 
 	spinner.start(`${yellow(`BROWSER`)} starting…`);
 	const browser = await puppeteer.launch({
-		headless: xheadless,
+		headless: headless,
 		userDataDir: 'data'
 	});
 	spinner.succeed(`${green(`BROWSER`)} started`);

@@ -13,7 +13,7 @@ module.exports = meow(
 
 	Options
 	  ${yellow(`--reboot`)}, ${yellow(`-r`)}        Reboot the router.
-	  ${yellow(`--xheadless`)}, ${yellow(`-x`)}     Not the headless mode.
+	  ${yellow(`--headless`)}, ${yellow(`-x`)}      Not the headless mode.
 	  ${yellow(`--data`)}, ${yellow(`-d`)}          Print the stats data.
 	  ${yellow(`--screenshot`)}, ${yellow(
 		`-s`
@@ -25,7 +25,7 @@ module.exports = meow(
 	  ${green(`ptcl-cli`)} ${yellow(`-l`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--reboot`)}
 	  ${green(`ptcl-cli`)} ${yellow(`-r`)}
-	  ${green(`ptcl-cli`)} ${yellow(`--xheadless`)}
+	  ${green(`ptcl-cli`)} ${yellow(`--headless`)}
 	  ${green(`ptcl-cli`)} ${yellow(`-x`)}
 	  ${green(`ptcl-cli`)} ${yellow(`--screenshot`)}
 	  ${green(`ptcl-cli`)} ${yellow(`-s`)}
@@ -42,7 +42,7 @@ module.exports = meow(
 				default: false,
 				alias: 'r'
 			},
-			xheadless: {
+			headless: {
 				type: 'boolean',
 				default: false,
 				alias: 'x'

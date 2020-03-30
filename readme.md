@@ -10,14 +10,11 @@ Control PTCL router via command line
 
 # ptcl-cli
 
-
 - 🗃️ Get all data on **Speed**: `download`, `upload`, **SNR**, **Attainable** speeds.
 - 🤣 Screenshot xDSL stats to the desktop for quick filing a complaint.
 - 🤯 Run in both headless or non-headless browser modes.
 - 📟 Store `user`, `pass` configurations securely.
 - 👐 Automagically `reboot` your PTCL router.
-
-<br>
 
 <br>
 
@@ -40,7 +37,7 @@ ptcl-cli
 ptcl-cli config       # Configure and store user/pass in a safe location.
 ptcl-cli --reboot     # Reboot the router.
 ptcl-cli -r           # Reboot the router.
-ptcl-cli --xheadless  # Headless mode.
+ptcl-cli --headless  # Headless mode.
 ptcl-cli -x           # Headless mode.
 ptcl-cli --data       # Print the stats data.
 ptcl-cli -d           # Print the stats data.
@@ -48,6 +45,8 @@ ptcl-cli --screenshot # Screenshot xDSL Stats for filing a complaint.
 ptcl-cli -s           # Screenshot xDSL Stats for filing a complaint.
 ptcl-cli -xd          # 1) Headless mode 2) Print the stats data.
 ```
+
+[![⚙️](..github/configdata.gif)](./../../)
 
 <br>
 
