@@ -78,8 +78,7 @@ const pkgJSON = require('./package.json');
 
 	spinner.start(`${yellow(`BROWSER`)} starting…`);
 	const browser = await puppeteer.launch({
-		headless: headless,
-		userDataDir: 'data'
+		headless: headless
 	});
 	spinner.succeed(`${green(`BROWSER`)} started`);
 
