@@ -116,6 +116,7 @@ const pkgJSON = require('./package.json');
 		await page.click('input[id="Btn_restart"]');
 		await waitFor(800);
 		await page.click('input[id="confirmOK"]');
+		await waitFor(800);
 		spinner.succeed(`${green(`REBOOTING`)} now…`);
 	}
 
