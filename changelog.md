@@ -32,11 +32,27 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [2.7.0](https://github.com/ahmadawais/ptcli/compare/2.6.0...2.7.0)
+
+![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
+
+> 🐛 Reboot timeout [`caec7b5`](https://github.com/ahmadawais/ptcli/commit/caec7b5bb8462cc95b52462eb1249b26b34afc9f) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [2.6.0](https://github.com/ahmadawais/ptcli/compare/2.5.3...2.6.0)
 
 ![🐛 FIX:](https://img.shields.io/badge/-FIX-gray.svg?colorB=ff6347)
 
 > 🐛 Extraneous [`8457731`](https://github.com/ahmadawais/ptcli/commit/8457731a345bdf507661763f5e73e3ab47ef5303) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`5a9a97f`](https://github.com/ahmadawais/ptcli/commit/5a9a97f6d572c65aca4b49b434b9b27f08ddb428) <br>
 
 <br>
 
