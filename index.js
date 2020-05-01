@@ -43,10 +43,23 @@ const pkgJSON = require('./package.json');
 
 	// Config.
 	const config = new Configstore(pkgJSON.name, {});
+	let host = config.get('host');
 	let user = config.get('user');
 	let pass = config.get('pass');
 
 	if ((!user && !pass) || configure) {
+		const [errHost, hostname] = await to(
+			prompt({
+				type: `input`,
+				name: `hostname`,
+				initial: `192.168.10.1`,
+				message: `Enter the hostname ?`
+			})
+		);
+		handleError(`HOSTNAME`, errHost);
+		await shouldCancel(hostname);
+		config.set('host', hostname.hostname);
+
 		const [errUsername, username] = await to(
 			prompt({
 				type: `input`,
@@ -72,6 +85,7 @@ const pkgJSON = require('./package.json');
 		config.set('pass', password.password);
 
 		// Get again.
+		host = config.get('host');
 		user = config.get('user');
 		pass = config.get('pass');
 	}
@@ -86,7 +100,7 @@ const pkgJSON = require('./package.json');
 	const page = (await browser.pages())[0];
 	page.setViewport({width: 1000, height: 1000, deviceScaleFactor: 2});
 
-	await page.goto('http://192.168.10.1/', {
+	await page.goto('http://' + host, {
 		timeout: 15000,
 		waitUntil: 'domcontentloaded'
 	});
